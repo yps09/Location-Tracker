@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorback"
+    tools:context=".Documentation">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="DOCUMENTATION FOR LOCATION TRACKER"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/img"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:text="Real-Time Tracking:
+Stay informed with accurate, real-time location updates.
+
+Altitude and Longitude:
+View both altitude and longitude for comprehensive location details.
+
+Slide Button Operation:
+Control data fetching with a convenient slide button—fetch when you need it, conserve battery when you don't.
+
+User-Friendly Interface:
+Easily navigate the app with a clean and intuitive design.
+
+Customizable Settings:
+Personalize tracking intervals, map styles, and notifications to fit your preferences.
+
+Secure and Private:
+Your location data is handled with top-tier encryption for maximum security."
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/direction"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:text="Points of Interest: Discover nearby amenities like restaurants and gas stations, enriching your travel experience.
+
+Seamless Integration: Effortlessly transition between route planning and navigation with our app's seamless integration. "
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/l_serch"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:text="Swift Live Tracking:
+Experience seamless and rapid live location tracking across various geographical locations.
+
+Global Accessibility:
+Our service covers every corner of the globe, providing live updates regardless of where you or your contacts are situated.
+
+Map Integration:
+Enjoy the convenience of a map-integrated system, offering a visual representation of live locations for enhanced clarity.
+
+User-Friendly Interface:
+The intuitive interface ensures a hassle-free experience, allowing users of all levels of tech-savviness to navigate effortlessly."
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- contact details-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/contactbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/call"
+                        />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/emailbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="120dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/email"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/gitbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="220dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/git"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/linkedbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/linkedin"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
